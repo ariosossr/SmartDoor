@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stas.smartdoor.MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/todo"
+       android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignEnd="@id/imageButton5"
+        android:layout_above="@id/imageButton5"
+        android:layout_alignRight="@id/imageButton5" android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignEnd="@id/imageButton6"
+        android:layout_above="@id/imageButton6"
+        android:layout_alignRight="@id/imageButton6" android:contentDescription="@string/todo"/>
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignEnd="@id/imageButton7"
+        android:layout_above="@id/imageButton7"
+        android:layout_alignRight="@id/imageButton7" android:contentDescription="@string/todo"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:color/darker_gray"
+        android:layout_alignEnd="@id/imageButton8"
+        android:layout_above="@id/imageButton8"
+        android:layout_alignRight="@id/imageButton8" android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:src="@drawable/Menu"
+        android:scaleType="centerInside"
+        android:id="@+id/imageButton10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/todo"
+         />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cam_text" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="android.webkit.WebViewFragment"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2"
+        tools:layout="@android:layout/browser_link_context_header" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fragment"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Massages" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="android.app.ListFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        tools:layout="@android:layout/preference_category" />
+
+</RelativeLayout>
