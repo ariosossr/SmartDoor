@@ -6,56 +6,82 @@
     android:layout_height="match_parent"
     tools:context="com.example.stas.smartdoor.MainActivity">
 
-    <ImageButton
+    <Button
+        android:background="@drawable/open"
+        android:text="Закрыть"
+        android:textSize="10dp"
+        android:gravity="center_horizontal|bottom"
+
+        android:scaleType="center"
+
         android:id="@+id/imageButton5"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:contentDescription="@string/todo"
-       android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true" />
 
-    <ImageButton
+    <Button
+        android:background="@drawable/close"
+        android:scaleType="centerInside"
+        android:gravity="center_horizontal|bottom"
+        android:text="Открыть"
+        android:textSize="10dp"
         android:id="@+id/imageButton6"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
-        android:layout_alignEnd="@id/imageButton5"
-        android:layout_above="@id/imageButton5"
-        android:layout_alignRight="@id/imageButton5" android:contentDescription="@string/todo"/>
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/imageButton5"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/todo"/>
 
-    <ImageButton
+    <Button
+        android:background="@drawable/photo"
+        android:scaleType="center"
+        android:gravity="center_horizontal|bottom"
+        android:text="Снимок"
+        android:textSize="10dp"
+        android:layout_marginLeft="10dp"
         android:id="@+id/imageButton7"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
-        android:layout_alignEnd="@id/imageButton6"
-        android:layout_above="@id/imageButton6"
-        android:layout_alignRight="@id/imageButton6" android:contentDescription="@string/todo"/>
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/imageButton8"
+        android:contentDescription="@string/todo"/>
 
-    <ImageButton
+    <Button
+        android:background="@drawable/stop"
+        android:scaleType="centerCrop"
+        android:text="Стоп"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
         android:id="@+id/imageButton8"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
-        android:layout_alignEnd="@id/imageButton7"
-        android:layout_above="@id/imageButton7"
-        android:layout_alignRight="@id/imageButton7" android:contentDescription="@string/todo"/>
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/imageButton9"
+        android:contentDescription="@string/todo"/>
 
 
-    <ImageButton
+    <Button
+        android:background="@drawable/play"
+        android:scaleType="centerInside"
+        android:text="Пуск"
+        android:textSize="10dp"
+        android:gravity="center_horizontal|bottom"
         android:id="@+id/imageButton9"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        app:srcCompat="@android:color/darker_gray"
-        android:layout_alignEnd="@id/imageButton8"
-        android:layout_above="@id/imageButton8"
-        android:layout_alignRight="@id/imageButton8" android:contentDescription="@string/todo" />
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/todo" />
 
-    <ImageButton
-        android:src="@drawable/Menu"
-        android:scaleType="centerInside"
+    <Button
+        android:background="@drawable/menu"
+        android:textSize="10dp"
+        android:text="Настройки"
+        android:scaleType="center"
         android:id="@+id/imageButton10"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -63,7 +89,7 @@
         android:layout_alignParentRight="true"
         android:adjustViewBounds="false"
         android:contentDescription="@string/todo"
-         />
+        android:gravity="bottom" />
 
     <EditText
         android:id="@+id/editText2"
@@ -97,14 +123,5 @@
         android:inputType="textPersonName"
         android:text="@string/Massages" />
 
-    <fragment
-        android:id="@+id/fragment2"
-        android:name="android.app.ListFragment"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText3"
-        tools:layout="@android:layout/preference_category" />
 
 </RelativeLayout>
